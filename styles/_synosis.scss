@@ -1,0 +1,260 @@
+// synosis section 
+#synosis {
+    background: #000;
+    color: $AOT-Black;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif !important;
+
+    h1 {
+        margin-bottom: 20px;
+        font-family: 'Pirata One', cursive !important;
+        color: $primary-text-color;
+    }
+
+    img {
+        border: 2px solid #000 !important;
+    }
+
+    // grid position 
+    .anime-wrapper {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 100px;
+        gap: 20px 110px;
+        grid-template-areas:
+            "the-trio-wish manga-text ."
+            "the-kid-trio manga-text ."
+            ". . .";
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        background-color: #fff;
+    }
+
+    .the-trio-wish {
+        grid-area: the-trio-wish;
+    }
+
+    .the-kid-trio {
+        grid-area: the-kid-trio;
+    }
+
+    .manga-text {
+        grid-area: manga-text;
+    }
+
+    .the-trio-wish img {
+        width: 700px !important;
+        height: 300px !important;
+        object-fit: cover;
+    }
+
+    .the-kid-trio img {
+        width: 500px !important;
+        height: 300px !important;
+        object-fit: cover;
+    }
+
+    .manga-text {
+        padding: 50px;
+        max-width: 400px;
+        border: 2px solid #000;
+        border-radius: 100% 100% 100% 100%;
+        -webkit-border-radius: 100% 100% 100% 100%;
+        -moz-border-radius: 100% 100% 100% 100%;
+        -ms-border-radius: 100% 100% 100% 100%;
+        -o-border-radius: 100% 100% 100% 100%;
+
+
+        p {
+            width: 100%;
+        }
+
+    }
+
+    .anime-wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 100px;
+        gap: 0px 10px;
+        grid-template-areas:
+            "titan-face titan-hand text"
+            "titan-face shock ."
+            ". . .";
+        border: 2px solid black;
+        margin-bottom: 20px;
+        background-color: #fff;
+    }
+
+    .titan-face {
+        grid-area: titan-face;
+    }
+
+    .titan-hand {
+        grid-area: titan-hand;
+    }
+
+    .shock {
+        grid-area: shock;
+    }
+
+    .text {
+        grid-area: text;
+    }
+
+    .titan-face img {
+        width: 400px !important;
+        height: 700px !important;
+        object-fit: cover;
+
+    }
+
+    .titan-face {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: 'The starting point was desparate and tragic...';
+            background-color: #fff;
+            border: 2px solid #000;
+            bottom: -91px;
+            padding: 50px;
+            border-radius: 100% 100% 100% 100%;
+            -webkit-border-radius: 100% 100% 100% 100%;
+            -moz-border-radius: 100% 100% 100% 100%;
+            -ms-border-radius: 100% 100% 100% 100%;
+            -o-border-radius: 100% 100% 100% 100%;
+
+
+        }
+
+    }
+
+
+    .titan-hand img {
+        width: 400px !important;
+        height: 300px !important;
+        object-fit: cover;
+    }
+
+    .shock img {
+        width: 400px !important;
+        height: 300px !important;
+        object-fit: cover;
+    }
+
+    .text {
+        margin-top: 20px;
+        padding: 50px;
+        max-width: 500px;
+        border: 2px solid #000;
+        border-radius: 100% 100% 100% 100%;
+        -webkit-border-radius: 100% 100% 100% 100%;
+        -moz-border-radius: 100% 100% 100% 100%;
+        -ms-border-radius: 100% 100% 100% 100%;
+        -o-border-radius: 100% 100% 100% 100%;
+
+        p {
+            width: 100%;
+        }
+    }
+
+
+    .anime-wrapper3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "eren-agony eren-and-ymir ."
+            "the-rumbling eren-and-ymir ."
+            "former-chosa-heiden . .";
+        border: 2px solid black;
+        margin-bottom: 20px;
+        background-color: #fff;
+    }
+
+    .eren-agony {
+        grid-area: eren-agony;
+    }
+
+    .the-rumbling {
+        grid-area: the-rumbling;
+    }
+
+    .former-chosa-heiden {
+        grid-area: former-chosa-heiden;
+    }
+
+    .eren-and-ymir {
+        grid-area: eren-and-ymir;
+    }
+
+    .eren-agony img {
+        width: 500px !important;
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    .the-rumbling img {
+        width: 500px !important;
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    .the-rumbling {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: 'leads to the destructive changes throughout the world and his life.';
+            background-color: #fff;
+            border: 2px solid #000;
+            z-index: 1;
+            bottom: -124px;
+            padding: 50px;
+            border-radius: 100% 100% 100% 100%;
+            -webkit-border-radius: 100% 100% 100% 100%;
+            -moz-border-radius: 100% 100% 100% 100%;
+            -ms-border-radius: 100% 100% 100% 100%;
+            -o-border-radius: 100% 100% 100% 100%;
+        }
+    }
+
+    .former-chosa-heiden img {
+        width: 500px !important;
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    .eren-and-ymir img {
+        width: 400px !important;
+        height: 500px !important;
+        object-fit: cover;
+    }
+
+    .eren-and-ymir {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: 'What Eren decided to take vengeance for his family and hometown...';
+            background-color: #fff;
+            border: 2px solid #000;
+            top: 68px;
+            right: -92px;
+            left: 320px;
+            bottom: 200px;
+            padding: 50px;
+            border-radius: 100% 100% 100% 100%;
+            -webkit-border-radius: 100% 100% 100% 100%;
+            -moz-border-radius: 100% 100% 100% 100%;
+            -ms-border-radius: 100% 100% 100% 100%;
+            -o-border-radius: 100% 100% 100% 100%;
+
+        }
+    }
+}

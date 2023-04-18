@@ -1,0 +1,1597 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+#characters {
+  background: #000;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+#characters .wrapper {
+  width: 100%;
+  height: 300px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
+  position: relative;
+  z-index: 9999;
+}
+#characters .wrapper .text {
+  display: grid;
+  justify-items: start;
+  color: #fff9f5;
+}
+#characters .wrapper .text .name {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+#characters .wrapper .text .name span {
+  color: #b81806;
+  font-size: 2.5rem;
+}
+#characters .wrapper .text .title {
+  font-size: 1.25rem;
+}
+#characters .wrapper .text .description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+#characters .character-wrapper1,
+#characters .character-wrapper2,
+#characters .character-wrapper3,
+#characters .character-wrapper4,
+#characters .character-wrapper5 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#characters .character-wrapper1 .background-img img,
+#characters .character-wrapper2 .background-img img,
+#characters .character-wrapper3 .background-img img,
+#characters .character-wrapper4 .background-img img,
+#characters .character-wrapper5 .background-img img {
+  position: absolute;
+  bottom: -91px;
+  right: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+  z-index: 0;
+  width: 100%;
+  opacity: 0.2;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+#characters .character-wrapper1 .profile-img,
+#characters .character-wrapper2 .profile-img,
+#characters .character-wrapper3 .profile-img,
+#characters .character-wrapper4 .profile-img,
+#characters .character-wrapper5 .profile-img {
+  position: relative;
+}
+#characters .character-wrapper1 .profile-img img,
+#characters .character-wrapper2 .profile-img img,
+#characters .character-wrapper3 .profile-img img,
+#characters .character-wrapper4 .profile-img img,
+#characters .character-wrapper5 .profile-img img {
+  width: 400px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: -154px;
+  bottom: 0;
+  right: 21px;
+  filter: grayscale(20%);
+  -webkit-filter: grayscale(20%);
+}
+#characters .character-wrapper1 .cta,
+#characters .character-wrapper2 .cta,
+#characters .character-wrapper3 .cta,
+#characters .character-wrapper4 .cta,
+#characters .character-wrapper5 .cta {
+  display: flex;
+  align-items: center;
+}
+#characters .character-wrapper1 .cta a,
+#characters .character-wrapper2 .cta a,
+#characters .character-wrapper3 .cta a,
+#characters .character-wrapper4 .cta a,
+#characters .character-wrapper5 .cta a {
+  color: #fff9f5 !important;
+  text-decoration: none !important;
+  margin-right: 10px;
+  letter-spacing: 3px;
+  cursor: pointer !important;
+}
+#characters .character-wrapper1 .cta a:hover,
+#characters .character-wrapper2 .cta a:hover,
+#characters .character-wrapper3 .cta a:hover,
+#characters .character-wrapper4 .cta a:hover,
+#characters .character-wrapper5 .cta a:hover {
+  color: #b81806 !important;
+}
+#characters .character-wrapper1 .cta .dash,
+#characters .character-wrapper2 .cta .dash,
+#characters .character-wrapper3 .cta .dash,
+#characters .character-wrapper4 .cta .dash,
+#characters .character-wrapper5 .cta .dash {
+  width: 15px;
+  height: 1px;
+  background-color: #b81806;
+  margin-right: 10px;
+}
+#characters .character-wrapper1 .cta .isayamaVid,
+#characters .character-wrapper2 .cta .isayamaVid,
+#characters .character-wrapper3 .cta .isayamaVid,
+#characters .character-wrapper4 .cta .isayamaVid,
+#characters .character-wrapper5 .cta .isayamaVid {
+  position: relative;
+  cursor: pointer;
+}
+#characters .character-wrapper1 .cta .isayamaVid a,
+#characters .character-wrapper2 .cta .isayamaVid a,
+#characters .character-wrapper3 .cta .isayamaVid a,
+#characters .character-wrapper4 .cta .isayamaVid a,
+#characters .character-wrapper5 .cta .isayamaVid a {
+  text-decoration: none;
+}
+#characters .character-wrapper1 .cta .isayamaVid .img-thumbnail,
+#characters .character-wrapper2 .cta .isayamaVid .img-thumbnail,
+#characters .character-wrapper3 .cta .isayamaVid .img-thumbnail,
+#characters .character-wrapper4 .cta .isayamaVid .img-thumbnail,
+#characters .character-wrapper5 .cta .isayamaVid .img-thumbnail {
+  padding: 0 !important;
+  width: 160px !important;
+  height: 81px !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  background-color: var(--bs-body-bg);
+  border: none !important;
+  border-radius: var(--bs-border-radius);
+  max-width: 100%;
+  margin-right: 5px;
+}
+#characters .character-wrapper1 .cta .isayamaVid::after,
+#characters .character-wrapper2 .cta .isayamaVid::after,
+#characters .character-wrapper3 .cta .isayamaVid::after,
+#characters .character-wrapper4 .cta .isayamaVid::after,
+#characters .character-wrapper5 .cta .isayamaVid::after {
+  position: absolute;
+  content: "";
+  width: 97%;
+  height: 100%;
+  background: #707070;
+  opacity: 0.5;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-right: 5px;
+  border-radius: var(--bs-border-radius);
+}
+#characters .character-wrapper1 .background-element,
+#characters .character-wrapper2 .background-element,
+#characters .character-wrapper3 .background-element,
+#characters .character-wrapper4 .background-element,
+#characters .character-wrapper5 .background-element {
+  display: contents;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+#characters .character-wrapper1 .background-element .corner-circle,
+#characters .character-wrapper2 .background-element .corner-circle,
+#characters .character-wrapper3 .background-element .corner-circle,
+#characters .character-wrapper4 .background-element .corner-circle,
+#characters .character-wrapper5 .background-element .corner-circle {
+  position: absolute;
+  background-color: #b81806;
+  width: 400px;
+  height: 400px;
+  top: -155px;
+  left: -183px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0.5;
+}
+#characters .character-wrapper1 .background-element .corner-circle p,
+#characters .character-wrapper2 .background-element .corner-circle p,
+#characters .character-wrapper3 .background-element .corner-circle p,
+#characters .character-wrapper4 .background-element .corner-circle p,
+#characters .character-wrapper5 .background-element .corner-circle p {
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 110px;
+  right: 26px;
+  color: #fff9f5;
+}
+#characters .character-wrapper1 .background-element .profile-circle,
+#characters .character-wrapper2 .background-element .profile-circle,
+#characters .character-wrapper3 .background-element .profile-circle,
+#characters .character-wrapper4 .background-element .profile-circle,
+#characters .character-wrapper5 .background-element .profile-circle {
+  position: absolute;
+  background-color: #b81806;
+  background-color: #b81806;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  right: 197px;
+  bottom: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0.5;
+}
+#characters .character-wrapper1 .background-element .right-square,
+#characters .character-wrapper2 .background-element .right-square,
+#characters .character-wrapper3 .background-element .right-square,
+#characters .character-wrapper4 .background-element .right-square,
+#characters .character-wrapper5 .background-element .right-square {
+  position: absolute;
+  background-color: #b81806;
+  width: 150px;
+  right: -54px;
+  transform: rotate(270deg);
+  opacity: 0.9;
+  z-index: 1;
+  color: #fff9f5;
+}
+#characters .character-wrapper1 .background-element .right-square2,
+#characters .character-wrapper2 .background-element .right-square2,
+#characters .character-wrapper3 .background-element .right-square2,
+#characters .character-wrapper4 .background-element .right-square2,
+#characters .character-wrapper5 .background-element .right-square2 {
+  position: absolute;
+  width: 150px;
+  right: -54px;
+  height: 40px;
+  top: 304px;
+  transform: rotate(270deg);
+  background-color: #fff;
+}
+#characters .character-wrapper2 .wrapper::after {
+  content: "エレン・イェーガー";
+  position: absolute;
+  top: -69px;
+  left: 0;
+  color: #fff9f5;
+  font-size: 4rem;
+  opacity: 0.5;
+}
+#characters .character-wrapper2 .background-element .corner-circle {
+  background-color: #004d1f;
+}
+#characters .character-wrapper2 .background-element .corner-circle p {
+  bottom: 96px;
+  right: 36px;
+}
+#characters .character-wrapper2 .background-element .profile-circle {
+  background-color: #004d1f;
+}
+#characters .character-wrapper2 .background-element .right-square {
+  background-color: #004d1f;
+}
+#characters .character-wrapper2 .background-element .profile2 img {
+  position: absolute;
+  top: -342px;
+  left: 654px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+#characters .character-wrapper2 .text .name span {
+  color: #004d1f;
+}
+#characters .character-wrapper2 .cta .dash {
+  background-color: #004d1f !important;
+}
+#characters .character-wrapper2 .profile-img img {
+  width: 450px;
+  height: 534px;
+  top: -238px;
+}
+#characters .character-wrapper3 .wrapper::after {
+  content: "アッカーマン";
+  position: absolute;
+  top: -69px;
+  left: 0;
+  color: #fff9f5;
+  font-size: 4rem;
+  opacity: 0.5;
+}
+#characters .character-wrapper3 .background-element .corner-circle {
+  background-color: #b81806;
+}
+#characters .character-wrapper3 .background-element .corner-circle p {
+  bottom: 77px;
+  right: 23px;
+}
+#characters .character-wrapper3 .background-element .profile-circle {
+  background-color: #b81806;
+}
+#characters .character-wrapper3 .background-element .right-square {
+  background-color: #b81806;
+  width: 162px;
+  right: -60px;
+}
+#characters .character-wrapper3 .background-element .profile2 img {
+  position: absolute;
+  top: -342px;
+  left: 371px;
+  width: 670px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+}
+#characters .character-wrapper3 .text .name span {
+  color: #b81806;
+}
+#characters .character-wrapper3 .cta .dash {
+  background-color: #b81806 !important;
+}
+#characters .character-wrapper3 .profile-img img {
+  width: 351px;
+  height: 409px;
+  top: -112px;
+}
+#characters .character-wrapper4 .wrapper::after {
+  content: "アルミン・アルレルト";
+  position: absolute;
+  top: -69px;
+  left: 0;
+  color: #fff9f5;
+  font-size: 4rem;
+  opacity: 0.5;
+}
+#characters .character-wrapper4 .background-element .corner-circle {
+  background-color: #ffbe45;
+}
+#characters .character-wrapper4 .background-element .corner-circle p {
+  bottom: 111px;
+  right: 6px;
+}
+#characters .character-wrapper4 .background-element .profile-circle {
+  background-color: #ffbe45;
+}
+#characters .character-wrapper4 .background-element .right-square {
+  background-color: #ffbe45;
+  width: 162px;
+  right: -60px;
+}
+#characters .character-wrapper4 .background-element .profile2 img {
+  position: absolute;
+  top: -342px;
+  left: 817px;
+  width: 328px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+}
+#characters .character-wrapper4 .text .name span {
+  color: #ffbe45;
+}
+#characters .character-wrapper4 .cta .dash {
+  background-color: #ffbe45 !important;
+}
+#characters .character-wrapper4 .profile-img img {
+  width: 402px;
+  height: 410px;
+  top: -112px;
+}
+#characters .character-wrapper5 .wrapper::after {
+  content: "リヴァイ・アッカーマン";
+  position: absolute;
+  top: -69px;
+  left: 0;
+  color: #fff9f5;
+  font-size: 4rem;
+  opacity: 0.5;
+}
+#characters .character-wrapper5 .background-element .corner-circle {
+  background-color: #004d1f;
+}
+#characters .character-wrapper5 .background-element .corner-circle p {
+  bottom: 97px;
+  right: 37px;
+}
+#characters .character-wrapper5 .background-element .profile-circle {
+  background-color: #004d1f;
+}
+#characters .character-wrapper5 .background-element .right-square {
+  background-color: #004d1f;
+  width: 179px;
+  right: -69px;
+}
+#characters .character-wrapper5 .background-element .profile2 img {
+  position: absolute;
+  top: -366px;
+  left: 456px;
+  width: 522px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+}
+#characters .character-wrapper5 .text .name span {
+  color: #004d1f;
+}
+#characters .character-wrapper5 .cta .dash {
+  background-color: #004d1f !important;
+}
+#characters .character-wrapper5 .profile-img img {
+  width: 386px;
+  height: 364px;
+  top: -68px;
+}
+#characters .others-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+#characters .others-wrapper .ml15 {
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+#characters .others-wrapper .ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+#characters .others-wrapper .other-background {
+  position: absolute;
+  z-index: 0;
+}
+#characters .others-wrapper .other-background img {
+  position: absolute;
+  z-index: 0;
+  width: 600px;
+  height: 741px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.1;
+}
+#characters .others-wrapper .other-background img:nth-child(1) {
+  top: 0;
+  left: -339px;
+}
+#characters .others-wrapper .other-background img:nth-child(2) {
+  top: 0;
+  right: -318px;
+}
+#characters .others-wrapper .others-display {
+  display: flex;
+  position: relative;
+}
+#characters .others-wrapper .others-display .up,
+#characters .others-wrapper .others-display .down {
+  position: absolute;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.6;
+}
+#characters .others-wrapper .others-display .up {
+  top: -16px;
+  left: 144px;
+}
+#characters .others-wrapper .others-display .down {
+  bottom: -17px;
+  left: 144px;
+}
+#characters .others-wrapper .vertical-display {
+  width: 100px;
+  height: 80vh;
+  display: grid;
+  align-items: center;
+  padding: 20px 10px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  background: transparent;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 50px;
+}
+#characters .others-wrapper .vertical-display img {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#characters .others-wrapper .vertical-display img.active {
+  border: 0.5px solid #fff;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#characters .others-wrapper .main-display {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 14px;
+}
+#characters .others-wrapper .main-display .profil-pic {
+  width: 800px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#characters .others-wrapper .main-display .profil-pic img {
+  width: 100%;
+}
+
+#synosis {
+  background: #000;
+  color: #1d0e0b;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+#synosis h1 {
+  margin-bottom: 20px;
+  font-family: "Pirata One", cursive !important;
+  color: #fff9f5;
+}
+#synosis img {
+  border: 2px solid #000 !important;
+}
+#synosis .anime-wrapper {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 100px;
+  gap: 20px 110px;
+  grid-template-areas: "the-trio-wish manga-text ." "the-kid-trio manga-text ." ". . .";
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+#synosis .the-trio-wish {
+  grid-area: the-trio-wish;
+}
+#synosis .the-kid-trio {
+  grid-area: the-kid-trio;
+}
+#synosis .manga-text {
+  grid-area: manga-text;
+}
+#synosis .the-trio-wish img {
+  width: 700px !important;
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .the-kid-trio img {
+  width: 500px !important;
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .manga-text {
+  padding: 50px;
+  max-width: 400px;
+  border: 2px solid #000;
+  border-radius: 100% 100% 100% 100%;
+  -webkit-border-radius: 100% 100% 100% 100%;
+  -moz-border-radius: 100% 100% 100% 100%;
+  -ms-border-radius: 100% 100% 100% 100%;
+  -o-border-radius: 100% 100% 100% 100%;
+}
+#synosis .manga-text p {
+  width: 100%;
+}
+#synosis .anime-wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 100px;
+  gap: 0px 10px;
+  grid-template-areas: "titan-face titan-hand text" "titan-face shock ." ". . .";
+  border: 2px solid black;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+#synosis .titan-face {
+  grid-area: titan-face;
+}
+#synosis .titan-hand {
+  grid-area: titan-hand;
+}
+#synosis .shock {
+  grid-area: shock;
+}
+#synosis .text {
+  grid-area: text;
+}
+#synosis .titan-face img {
+  width: 400px !important;
+  height: 700px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .titan-face {
+  position: relative;
+}
+#synosis .titan-face::after {
+  position: absolute;
+  content: "The starting point was desparate and tragic...";
+  background-color: #fff;
+  border: 2px solid #000;
+  bottom: -91px;
+  padding: 50px;
+  border-radius: 100% 100% 100% 100%;
+  -webkit-border-radius: 100% 100% 100% 100%;
+  -moz-border-radius: 100% 100% 100% 100%;
+  -ms-border-radius: 100% 100% 100% 100%;
+  -o-border-radius: 100% 100% 100% 100%;
+}
+#synosis .titan-hand img {
+  width: 400px !important;
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .shock img {
+  width: 400px !important;
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .text {
+  margin-top: 20px;
+  padding: 50px;
+  max-width: 500px;
+  border: 2px solid #000;
+  border-radius: 100% 100% 100% 100%;
+  -webkit-border-radius: 100% 100% 100% 100%;
+  -moz-border-radius: 100% 100% 100% 100%;
+  -ms-border-radius: 100% 100% 100% 100%;
+  -o-border-radius: 100% 100% 100% 100%;
+}
+#synosis .text p {
+  width: 100%;
+}
+#synosis .anime-wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "eren-agony eren-and-ymir ." "the-rumbling eren-and-ymir ." "former-chosa-heiden . .";
+  border: 2px solid black;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+#synosis .eren-agony {
+  grid-area: eren-agony;
+}
+#synosis .the-rumbling {
+  grid-area: the-rumbling;
+}
+#synosis .former-chosa-heiden {
+  grid-area: former-chosa-heiden;
+}
+#synosis .eren-and-ymir {
+  grid-area: eren-and-ymir;
+}
+#synosis .eren-agony img {
+  width: 500px !important;
+  height: 250px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .the-rumbling img {
+  width: 500px !important;
+  height: 250px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .the-rumbling {
+  position: relative;
+}
+#synosis .the-rumbling::after {
+  position: absolute;
+  content: "leads to the destructive changes throughout the world and his life.";
+  background-color: #fff;
+  border: 2px solid #000;
+  z-index: 1;
+  bottom: -124px;
+  padding: 50px;
+  border-radius: 100% 100% 100% 100%;
+  -webkit-border-radius: 100% 100% 100% 100%;
+  -moz-border-radius: 100% 100% 100% 100%;
+  -ms-border-radius: 100% 100% 100% 100%;
+  -o-border-radius: 100% 100% 100% 100%;
+}
+#synosis .former-chosa-heiden img {
+  width: 500px !important;
+  height: 250px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .eren-and-ymir img {
+  width: 400px !important;
+  height: 500px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#synosis .eren-and-ymir {
+  position: relative;
+}
+#synosis .eren-and-ymir::before {
+  position: absolute;
+  content: "What Eren decided to take vengeance for his family and hometown...";
+  background-color: #fff;
+  border: 2px solid #000;
+  top: 68px;
+  right: -92px;
+  left: 320px;
+  bottom: 200px;
+  padding: 50px;
+  border-radius: 100% 100% 100% 100%;
+  -webkit-border-radius: 100% 100% 100% 100%;
+  -moz-border-radius: 100% 100% 100% 100%;
+  -ms-border-radius: 100% 100% 100% 100%;
+  -o-border-radius: 100% 100% 100% 100%;
+}
+
+#titans {
+  background: #000;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+#titans .titans-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#titans .titans-wrapper .imgDisplay {
+  display: flex;
+  height: 40rem;
+  gap: 1rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+#titans .titans-wrapper .imgDisplay div {
+  display: flex;
+  position: relative;
+}
+#titans .titans-wrapper .imgDisplay div img {
+  flex: 1;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts,
+#titans .titans-wrapper .imgDisplay .titan2 .texts,
+#titans .titans-wrapper .imgDisplay .titan3 .texts,
+#titans .titans-wrapper .imgDisplay .titan4 .texts,
+#titans .titans-wrapper .imgDisplay .titan5 .texts,
+#titans .titans-wrapper .imgDisplay .titan6 .texts,
+#titans .titans-wrapper .imgDisplay .titan7 .texts,
+#titans .titans-wrapper .imgDisplay .titan8 .texts,
+#titans .titans-wrapper .imgDisplay .titan9 .texts {
+  position: absolute;
+  top: -17;
+  left: 0;
+  display: inline-grid;
+  transition: opacity 0.2s, transform 0.3s;
+  height: -webkit-fill-available;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan1 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan2 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan2 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan3 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan3 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan4 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan4 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan5 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan5 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan6 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan6 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan7 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan7 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan8 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan8 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .name2 {
+  font-size: 4rem;
+  transition: opacity 0.2s, transform 0.3s;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan2 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan3 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan4 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan5 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan6 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan7 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan8 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .name1 {
+  color: #fff9f5;
+  position: relative;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan2 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan3 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan4 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan5 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan6 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan7 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan8 .texts .name2,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .name2 {
+  color: darkred;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan2 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan3 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan4 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan5 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan6 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan7 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan8 .texts .jname,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .jname {
+  color: #fff9f5;
+  font-size: 2rem;
+  place-self: end;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.3s;
+  top: -375px;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan2 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan3 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan4 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan5 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan6 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan7 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan8 .texts .owener,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .owener {
+  font-weight: bold;
+  color: #b81806;
+  font-size: 1rem;
+  place-self: end;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.3s;
+  top: -512px;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan2 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan3 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan4 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan5 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan6 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan7 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan8 .texts .owener span,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .owener span {
+  color: #fff9f5;
+  font-weight: normal;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts a,
+#titans .titans-wrapper .imgDisplay .titan2 .texts a,
+#titans .titans-wrapper .imgDisplay .titan3 .texts a,
+#titans .titans-wrapper .imgDisplay .titan4 .texts a,
+#titans .titans-wrapper .imgDisplay .titan5 .texts a,
+#titans .titans-wrapper .imgDisplay .titan6 .texts a,
+#titans .titans-wrapper .imgDisplay .titan7 .texts a,
+#titans .titans-wrapper .imgDisplay .titan8 .texts a,
+#titans .titans-wrapper .imgDisplay .titan9 .texts a {
+  place-self: end;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.3s;
+  position: absolute;
+  top: 154px;
+  text-decoration: none !important;
+  color: #fff9f5 !important;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan2 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan3 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan4 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan5 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan6 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan7 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan8 .texts a:hover,
+#titans .titans-wrapper .imgDisplay .titan9 .texts a:hover {
+  color: darkred !important;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover .name2,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover .name2 {
+  top: 15;
+  transform: translate3d(0, 15px, 0);
+  -webkit-transform: translate3d(0, 15px, 0);
+  -moz-transform: translate3d(0, 15px, 0);
+  -ms-transform: translate3d(0, 15px, 0);
+  -o-transform: translate3d(0, 15px, 0);
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover a {
+  opacity: 1;
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover .owener,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover .jname,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover .owener {
+  top: 50;
+  transform: translate3d(0, 50px, 0);
+  -webkit-transform: translate3d(0, 50px, 0);
+  -moz-transform: translate3d(0, 50px, 0);
+  -ms-transform: translate3d(0, 50px, 0);
+  -o-transform: translate3d(0, 50px, 0);
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan2 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan3 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan4 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan5 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan6 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan7 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan8 .texts:hover a,
+#titans .titans-wrapper .imgDisplay .titan9 .texts:hover a {
+  top: 180px;
+  transform: translate3d(0, 1px, 0);
+  -webkit-transform: translate3d(0, 1px, 0);
+  -moz-transform: translate3d(0, 1px, 0);
+  -ms-transform: translate3d(0, 1px, 0);
+  -o-transform: translate3d(0, 1px, 0);
+}
+#titans .titans-wrapper .imgDisplay .titan1 .texts {
+  left: 7px;
+}
+#titans .titans-wrapper .imgDisplay .titan2 .texts {
+  left: 42px;
+}
+#titans .titans-wrapper .imgDisplay .titan3 .texts {
+  left: 20px;
+}
+#titans .titans-wrapper .imgDisplay .titan4 .texts {
+  left: 19px;
+}
+#titans .titans-wrapper .imgDisplay .titan5 .texts {
+  left: 42px;
+}
+#titans .titans-wrapper .imgDisplay .titan6 .texts {
+  left: 88px;
+}
+#titans .titans-wrapper .imgDisplay .titan7 .texts {
+  left: 60px;
+}
+#titans .titans-wrapper .imgDisplay .titan8 .texts {
+  left: 83px;
+}
+#titans .titans-wrapper .imgDisplay .titan9 .texts {
+  left: 0;
+}
+#titans .titans-wrapper .imgDisplay .titan9 .texts .name1,
+#titans .titans-wrapper .imgDisplay .titan9 .texts .name2 {
+  font-size: 3.5rem;
+}
+#titans .titans-wrapper .icon {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#titans .titans-wrapper .icon:first-child {
+  left: 36px;
+  background: linear-gradient(90deg, #000 70%, transparent);
+  display: none;
+}
+#titans .titans-wrapper .icon:last-child {
+  right: 27px;
+  background: linear-gradient(-90deg, #000 70%, transparent);
+}
+#titans .titans-wrapper .icon i {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+}
+#titans .titans-wrapper .icon i:hover {
+  color: #fff;
+}
+
+#credits {
+  position: relative;
+}
+#credits .crdit-wrapper {
+  height: 100vh;
+}
+#credits .crdit-wrapper h1 {
+  left: 600px;
+  color: #fff9f5;
+  font-size: 5rem;
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+}
+#credits .crdit-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  filter: contrast(2);
+  -webkit-filter: contrast(2);
+}
+#credits .crdit-wrapper .info-wrapper {
+  height: 100%;
+  width: 50%;
+  background: transparent;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  float: left;
+  display: inline-grid;
+  padding-top: 50px;
+}
+#credits .crdit-wrapper .info-wrapper .info {
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+#credits .crdit-wrapper .info-wrapper .info .title {
+  font-size: 3rem;
+  color: #b81806;
+}
+#credits .crdit-wrapper .info-wrapper .info .description {
+  font-size: 1.75rem;
+  color: #fff9f5;
+  font-weight: lighter;
+}
+#credits .crdit-wrapper .info-wrapper .info .description a {
+  text-decoration: underline;
+  color: #fff9f5;
+}
+
+#about {
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif !important;
+  display: flex;
+  align-items: center;
+}
+#about .about-card {
+  position: relative;
+  background: transparent;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  height: 50vh;
+  border: 2px solid rgba(225, 225, 225, 0.5);
+  border-radius: 20px;
+}
+#about .about-card .profile-ctn img {
+  top: -78px;
+  left: 500px;
+  display: block;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 0 auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  box-shadow: 0 0 0 5px #ffffff;
+}
+#about .about-card .info {
+  display: flex;
+  flex-direction: column;
+  color: #fff9f5;
+  padding: 100px;
+}
+#about .about-card .info p span {
+  font-weight: bold;
+}
+#about .about-card .info .contact1 .social-icons a {
+  text-decoration: none !important;
+}
+#about .about-card .info .contact1 .social-icons a svg {
+  color: #fff;
+  height: 30px;
+  width: 30px;
+}
+#about .about-card .info .contact1 .social-icons a svg:hover {
+  color: darkred;
+}
+
+#contact {
+  background: #000;
+  height: 70vh;
+  font-family: "Roboto Condensed", sans-serif !important;
+  color: #fff9f5;
+}
+#contact .contact form {
+  background: transparent;
+  border: 2px solid rgba(225, 225, 225, 0.5);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact form input {
+  height: 40px;
+  width: 800px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+#contact .contact form textarea {
+  padding-left: 10px;
+  width: 800px;
+  border-radius: 8px;
+}
+#contact .contact form button {
+  width: 800px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+footer {
+  font-family: "Roboto Condensed", sans-serif !important;
+  height: 5vh;
+  display: flex;
+}
+footer .footerCtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footerCtn p {
+  margin-bottom: 0 !important;
+  font-size: 14px;
+}
+footer .footerCtn .social-icons a {
+  text-decoration: none !important;
+}
+footer .footerCtn .social-icons a svg {
+  color: #000;
+  height: 20px;
+  width: 20px;
+}
+footer .footerCtn .social-icons a svg:hover {
+  color: darkred;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Pirata One", cursive;
+}
+
+.preloader {
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease infinite;
+  -webkit-transition: all 0.5s ease infinite;
+  -moz-transition: all 0.5s ease infinite;
+  -ms-transition: all 0.5s ease infinite;
+  -o-transition: all 0.5s ease infinite;
+}
+.preloader a img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.preloader a .arumin {
+  width: 90px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.preloader a .ereh {
+  animation: myEreh 2s ease 1s infinite alternate both;
+}
+@keyframes myEreh {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%, 55%, 75%, 87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.preloader a .levi {
+  animation: myLevi 2s ease 2s infinite alternate both;
+}
+@keyframes myLevi {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%, 55%, 75%, 87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.preloader a .arumin {
+  animation: myArumin 2s ease 3s infinite alternate both;
+}
+@keyframes myArumin {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%, 55%, 75%, 87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.preloader a .mikasa {
+  animation: myMikasa 2s ease 4s infinite alternate both;
+}
+@keyframes myMikasa {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%, 55%, 75%, 87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+}
+
+.navBar {
+  position: fixed;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+}
+.nav .nav-item .nav-link {
+  color: #707070;
+}
+
+.nav-item:hover,
+.nav-link:hover {
+  color: #fff !important;
+  -webkit-text-decoration: underline #fff;
+          text-decoration: underline #fff;
+}
+
+#home {
+  width: 100%;
+  padding: 50px 0;
+  background: #000;
+  height: 100vh;
+}
+#home .heroCtn {
+  height: 80vh;
+  position: relative;
+  margin-top: 50px !important;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(225, 225, 225, 0.5);
+  border-radius: 20px;
+}
+#home .heroCtn img {
+  width: 50px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: -80px;
+}
+#home .heroCtn::after {
+  content: "Created by Wipada Pharabraksa";
+  color: #fff9f5;
+  font-size: 16px;
+  position: absolute;
+  bottom: 70px;
+  left: -120px;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+#home .heroCtn::before {
+  content: "";
+  background: #fff9f5;
+  width: 3px;
+  height: 150px;
+  position: absolute;
+  width: 3px;
+  height: 200px;
+  position: absolute;
+  bottom: -6px;
+  left: -20px;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+#home .heroCtn .hero-bacnner {
+  display: flex;
+  justify-content: space-between;
+}
+#home .heroCtn .hero-bacnner .erehImg {
+  width: -webkit-fill-available;
+}
+#home .heroCtn .hero-bacnner .erehImg img {
+  position: absolute;
+  width: 600px;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#home .heroCtn .hero-bacnner .erehImg img:nth-child(1) {
+  filter: grayscale(100%);
+  top: 0;
+  left: 141px;
+  -webkit-filter: grayscale(100%);
+  z-index: 0;
+}
+#home .heroCtn .hero-bacnner .erehImg img:nth-child(2) {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#home .heroCtn .hero-bacnner .quote {
+  color: #fff9f5;
+  z-index: 1;
+}
+#home .heroCtn .hero-bacnner .quote blockquote p {
+  font-size: 4rem;
+}
+#home .heroCtn .hero-bacnner .quote blockquote p span {
+  font-size: 6rem;
+  color: darkred;
+}
+#home .heroCtn .hero-bacnner .quote blockquote p.name {
+  font-size: 2rem;
+  float: right;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  -webkit-transform: translateY(150px);
+  -moz-transform: translateY(150px);
+  -ms-transform: translateY(150px);
+  -o-transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

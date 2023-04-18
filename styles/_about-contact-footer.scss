@@ -1,0 +1,143 @@
+#about {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    display: flex;
+    align-items: center;
+
+    .about-card {
+        position: relative;
+        background: transparent;
+        backdrop-filter: blur(8px);
+        height: 50vh;
+        border: 2px solid rgba(225, 225, 225, 0.5);
+        border-radius: 20px;
+
+        .profile-ctn {
+            img {
+                top: -78px;
+                left: 500px;
+                display: block;
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                border-radius: 50%;
+                margin: 0 auto;
+                -o-object-fit: cover;
+                object-fit: cover;
+                box-shadow: 0 0 0 5px #ffffff;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            color: $primary-text-color;
+            padding: 100px;
+
+            p span {
+                font-weight: bold;
+            }
+
+            .contact1 {
+                .social-icons a {
+                    text-decoration: none !important;
+                }
+
+                .social-icons a svg {
+                    color: #fff;
+                    height: 30px;
+                    width: 30px;
+
+                    &:hover {
+                        color: darkred;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+#contact {
+    background: #000;
+    height: 70vh;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    color: $primary-text-color;
+
+    .contact form {
+        background: transparent;
+        border: 2px solid rgba(225, 225, 225, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        input {
+            height: 40px;
+            width: 800px;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+        }
+
+        textarea {
+            padding-left: 10px;
+            width: 800px;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 800px !important;
+            margin-top: 5px !important;
+            margin-bottom: 5px !important;
+        }
+    }
+
+
+}
+
+
+footer {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    height: 5vh;
+    display: flex;
+
+    .footerCtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin-bottom: 0 !important;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            text-decoration: none !important;
+        }
+
+        .social-icons a svg {
+            color: #000;
+            height: 20px;
+            width: 20px;
+
+            &:hover {
+                color: darkred;
+            }
+        }
+
+    }
+
+}

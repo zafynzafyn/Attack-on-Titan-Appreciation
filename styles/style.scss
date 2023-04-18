@@ -1,0 +1,425 @@
+// variables 
+
+$AOT-Black: #1d0e0b;
+$primary-text-color: #fff9f5;
+$AOT-beige: #d88c51;
+$Aot-red: #b81806;
+$aot-darkgreen: #004d1f;
+$aot-yellow: #ffbe45;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import './characters';
+@import './synosis';
+@import './titans';
+@import './credits';
+@import './about-contact-footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Pirata One', cursive;
+}
+
+.preloader {
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease infinite;
+    -webkit-transition: all 0.5s ease infinite;
+    -moz-transition: all 0.5s ease infinite;
+    -ms-transition: all 0.5s ease infinite;
+    -o-transition: all 0.5s ease infinite;
+
+    a img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+
+    a .arumin {
+        width: 90px;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    a .ereh {
+        animation: myEreh 2s ease 1s infinite alternate both;
+
+        @keyframes myEreh {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 1;
+                transform: translateY(-45px);
+            }
+
+            24% {
+                opacity: 1;
+            }
+
+            40% {
+                animation-timing-function: ease-in;
+                transform: translateY(-24px);
+            }
+
+            65% {
+                animation-timing-function: ease-in;
+                transform: translateY(-12px);
+            }
+
+            82% {
+                animation-timing-function: ease-in;
+                transform: translateY(-6px);
+            }
+
+            93% {
+                animation-timing-function: ease-in;
+                transform: translateY(-4px);
+            }
+
+            25%,
+            55%,
+            75%,
+            87% {
+                animation-timing-function: ease-out;
+                transform: translateY(0px);
+            }
+
+            100% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    a .levi {
+        animation: myLevi 2s ease 2s infinite alternate both;
+
+        @keyframes myLevi {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 1;
+                transform: translateY(-45px);
+            }
+
+            24% {
+                opacity: 1;
+            }
+
+            40% {
+                animation-timing-function: ease-in;
+                transform: translateY(-24px);
+            }
+
+            65% {
+                animation-timing-function: ease-in;
+                transform: translateY(-12px);
+            }
+
+            82% {
+                animation-timing-function: ease-in;
+                transform: translateY(-6px);
+            }
+
+            93% {
+                animation-timing-function: ease-in;
+                transform: translateY(-4px);
+            }
+
+            25%,
+            55%,
+            75%,
+            87% {
+                animation-timing-function: ease-out;
+                transform: translateY(0px);
+            }
+
+            100% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    a .arumin {
+        animation: myArumin 2s ease 3s infinite alternate both;
+
+        @keyframes myArumin {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 1;
+                transform: translateY(-45px);
+            }
+
+            24% {
+                opacity: 1;
+            }
+
+            40% {
+                animation-timing-function: ease-in;
+                transform: translateY(-24px);
+            }
+
+            65% {
+                animation-timing-function: ease-in;
+                transform: translateY(-12px);
+            }
+
+            82% {
+                animation-timing-function: ease-in;
+                transform: translateY(-6px);
+            }
+
+            93% {
+                animation-timing-function: ease-in;
+                transform: translateY(-4px);
+            }
+
+            25%,
+            55%,
+            75%,
+            87% {
+                animation-timing-function: ease-out;
+                transform: translateY(0px);
+            }
+
+            100% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    a .mikasa {
+        animation: myMikasa 2s ease 4s infinite alternate both;
+
+        @keyframes myMikasa {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 1;
+                transform: translateY(-45px);
+            }
+
+            24% {
+                opacity: 1;
+            }
+
+            40% {
+                animation-timing-function: ease-in;
+                transform: translateY(-24px);
+            }
+
+            65% {
+                animation-timing-function: ease-in;
+                transform: translateY(-12px);
+            }
+
+            82% {
+                animation-timing-function: ease-in;
+                transform: translateY(-6px);
+            }
+
+            93% {
+                animation-timing-function: ease-in;
+                transform: translateY(-4px);
+            }
+
+            25%,
+            55%,
+            75%,
+            87% {
+                animation-timing-function: ease-out;
+                transform: translateY(0px);
+            }
+
+            100% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+
+.scroll-down header {
+    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {}
+
+// nav bar 
+.navBar {
+    position: fixed;
+    backdrop-filter: blur(15px);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+
+    .nav-item .nav-link {
+        color: #707070;
+    }
+}
+
+.nav-item:hover,
+.nav-link:hover {
+    color: #fff !important;
+    text-decoration: underline #fff;
+}
+
+
+// hero/home
+
+#home {
+    width: 100%;
+    padding: 50px 0;
+    background: #000;
+    height: 100vh;
+
+    .heroCtn {
+        height: 80vh;
+        position: relative;
+        margin-top: 50px !important;
+        display: flex;
+        align-items: center;
+        border: 2px solid rgba(225, 225, 225, 0.5);
+        border-radius: 20px;
+
+        img {
+            width: 50px;
+            -o-object-fit: contain;
+            object-fit: contain;
+            position: absolute;
+            bottom: 0;
+            right: -80px;
+        }
+
+        &::after {
+            content: 'Created by Wipada Pharabraksa';
+            color: $primary-text-color;
+            font-size: 16px;
+            position: absolute;
+            bottom: 70px;
+            left: -120px;
+            transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+        }
+
+        &::before {
+            content: '';
+            background: $primary-text-color;
+            width: 3px;
+            height: 150px;
+            position: absolute;
+            width: 3px;
+            height: 200px;
+            position: absolute;
+            bottom: -6px;
+            left: -20px;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+
+        }
+
+        .hero-bacnner {
+            display: flex;
+            justify-content: space-between;
+
+            .erehImg {
+                width: -webkit-fill-available;
+            }
+
+            .erehImg img {
+                position: absolute;
+                width: 600px;
+                height: 550px;
+                object-fit: cover;
+
+                &:nth-child(1) {
+                    filter: grayscale(100%);
+                    top: 0;
+                    left: 141px;
+                    -webkit-filter: grayscale(100%);
+                    z-index: 0;
+
+                }
+
+                &:nth-child(2) {
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+
+            .quote {
+                color: $primary-text-color;
+                z-index: 1;
+
+                blockquote p {
+                    font-size: 4rem;
+
+                    span {
+                        font-size: 6rem;
+                        color: darkred;
+
+                    }
+                }
+
+                blockquote p.name {
+                    font-size: 2rem;
+                    float: right;
+                }
+
+            }
+        }
+    }
+}
+
+// utilities
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+    -moz-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    -o-transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+}
